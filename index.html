@@ -15,7 +15,7 @@
         var minutes = now.getMinutes();
 
         document.getElementById("div").innerHTML =
-          year + "��" + month + "��" + day + "��" + hours + "ʱ";
+          year + "年" + month + "月" + day + "日" + hours + "时";
       }
       setInterval(myDate, 1000);
     </script>
@@ -64,18 +64,18 @@
       .daohang {
         padding: 10px 20px;
         border-bottom: 1px solid #999;
-        border-radius: 10px; /* Բ�ǵĴ�С�����Լ��� */
+        border-radius: 10px; /* 圆角的大小可以自己调 */
         font-size: 14px;
       }
       .roundside {
-        border-radius: 10px; /* Բ�ǵĴ�С�����Լ��� */
+        border-radius: 10px; /* 圆角的大小可以自己调 */
       }
     </style>
   </head>
   <body class="flex">
-    <!-- �� -->
+    <!-- 左 -->
     <div style="width: 150px; z-index: 2" class="white shadow">
-      <!-- ͷ�� -->
+      <!-- 头像 -->
       <div
         class="flex"
         style="
@@ -85,33 +85,33 @@
           border-bottom: 1px solid #999;
         "
       >
-        <img src=".\sor\712.jpg" alt="�ҵ�ͷ��" width="50px" />
+        <img src=".\sor\712.jpg" alt="我的头像" width="50px" />
         <div style="margin: 5px">DREBBER</div>
       </div>
-      <!-- ���� -->
+      <!-- 导航 -->
       <div class="flex1">
         <div class="daohang" style="color: rgb(218, 76, 105)">
-          BiliBili��available
+          BiliBili：available
         </div>
         <div class="daohang" style="color: rgb(11, 169, 22)">
-          WeChat��secret
+          WeChat：secret
         </div>
-        <div class="daohang" style="color: rgb(239, 25, 114)">QQ��secret</div>
-        <div style="font-size: 10px">��ҳ���ַ���bվup��</div>
-        <a href="https://space.bilibili.com/34786453">up����ҳ</a>
+        <div class="daohang" style="color: rgb(239, 25, 114)">QQ：secret</div>
+        <div style="font-size: 10px">网页布局仿制b站up主</div>
+        <a href="https://space.bilibili.com/34786453">up主首页</a>
       </div>
     </div>
-    <!-- �� -->
+    <!-- 右 -->
     <div class="flex1 flex column">
-      <!-- �� -->
+      <!-- 上 -->
       <div style="height: auto; z-index: 1" class="white shadow row">
         <div id="div"></div>
-        <div>������ĳ�����Լ������������ҳ</div>
-        <div>����Է�������һ����������Ҷ���</div>
+        <div>这里是某个人自己随便打出来的网页</div>
+        <div>你可以发现这个家伙甚至不会右对齐</div>
       </div>
-      <!-- �� -->
+      <!-- 下 -->
       <div class="flex1 flex" style="overflow: auto">
-        <!-- ���� -->
+        <!-- 下左 -->
         <div style="flex: 5" class="column mg8">
           <div style="height: 100px" class="flex row">
             <div
@@ -119,246 +119,52 @@
               class="mgr8 white shadow roundside"
             >
               <div>2005.7.14</div>
-              <div style="font-size: 34px; font-family: ����">����</div>
+              <div style="font-size: 34px; font-family: 楷体">我来</div>
             </div>
             <div
               style="flex: 1; padding: 5px"
               class="mgr8 white shadow roundside"
             >
               <div>2019.7.14</div>
-              <div style="font-size: 34px; font-family: ����">����</div>
+              <div style="font-size: 34px; font-family: 楷体">我现</div>
             </div>
             <div
               style="flex: 1; padding: 5px"
               class="mgr8 white shadow roundside"
             >
               <div>2021.7.14</div>
-              <div style="font-size: 34px; font-family: ����">�Ҽ�</div>
+              <div style="font-size: 34px; font-family: 楷体">我见</div>
             </div>
             <div style="flex: 1; padding: 5px" class="white shadow roundside">
               <div>2024.7.14</div>
-              <div style="font-size: 34px; font-family: ����">�ҽ�</div>
-              <div style="font-size: 34px; font-family: ����"><b>����</b></div>
+              <div style="font-size: 34px; font-family: 楷体">我将</div>
+              <div style="font-size: 34px; font-family: 楷体"><b>征服</b></div>
             </div>
           </div>
           <div style="height: auto" class="white shadow mgt8 flex">
             <a
               href="https://www.bilibili.com/video/BV1Rm4y1j7Bc/?spm_id_from=333.788.recommend_more_video.0&vd_source=74d5186621dd68e2d5f04e4ea471b06c"
             >
-              <img src=".\sor\bivideo.jpg" alt="bվ��Ƶ" height="100px"
+              <img src=".\sor\bivideo.jpg" alt="b站视频" height="100px"
             /></a>
-            <div style="margin: 5px; font-size: 30px">��ϲ���Ĺ���</div>
+            <div style="margin: 5px; font-size: 30px">最喜欢的鬼畜</div>
           </div>
           <div style="height: auto" class="white shadow mgt8 flex">
             <a
               href="https://www.bilibili.com/bangumi/play/ss47388?spm_id_from=333.337.0.0"
             >
-              <img src=".\sor\takagi.jpg" alt="bվ��Ƶ" height="100px"
+              <img src=".\sor\takagi.jpg" alt="b站视频" height="100px"
             /></a>
-            <div style="margin: 5px; font-size: 30px">��ϲ���Ķ���</div>
+            <div style="margin: 5px; font-size: 30px">最喜欢的动漫</div>
           </div>
           <div style="height: auto" class="white shadow mgt8 flex">
             <a href="https://www.bilibili.com/video/BV1me411n7eu/">
-              <img src=".\sor\OP.jpg" alt="bվ��Ƶ" height="120px"
+              <img src=".\sor\OP.jpg" alt="b站视频" height="120px"
             /></a>
-            <div style="margin: 5px; font-size: 30px">��ϲ���ĸ���</div>
+            <div style="margin: 5px; font-size: 30px">最喜欢的歌曲</div>
           </div>
           <div style="height: auto" class="white shadow mgt8">
-            ������ȫ��Ϲ�㣬û��Ӫ����
-          </div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">����ô���ڿ�</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">111</div>
-          <div style="height: auto" class="white shadow mgt8">
-            �㻹���ͦ������
+            这下面全是瞎搞，没有营养的
           </div>
           <div style="height: auto" class="white shadow mgt8">111</div>
           <div style="height: auto" class="white shadow mgt8">111</div>
@@ -455,24 +261,218 @@
           <div style="height: auto" class="white shadow mgt8">111</div>
           <div style="height: auto" class="white shadow mgt8">111</div>
           <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">你怎么还在看</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
           <div style="height: auto" class="white shadow mgt8">
-            ���ˣ����Ѿ��������ˣ������
+            你还真的挺无聊嘞
+          </div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">111</div>
+          <div style="height: auto" class="white shadow mgt8">
+            行了，你已经看到底了，你真棒
           </div>
         </div>
-        <!-- ���� -->
+        <!-- 下右 -->
         <div style="flex: 4" class="column mgr8 mgt8">
           <div style="height: auto" class="white shadow">
             <div>
-              ��Ϊһ����Ա���Ҽȴ������Լ���Ҳ�縺��һ�����κͶ�����������׵�����
+              作为一名团员，我既代表着自己，也肩负着一份责任和对社会作出贡献的义务。
             </div>
             <div>
-              �ڽ����ѧ�����ʱ����������ʶ�����������ŵ�Ͳ��㣬��ϣ���ܹ���˻�����õط����Լ������ƣ��ֲ������Ĳ��㡣
+              在进入大学的这段时间里，我深刻认识到了自身的优点和不足，并希望能够借此机会更好地发挥自己的优势，弥补自身的不足。
             </div>
             <div>
-              ��˼���ϣ���һֱ�����ŶԵ����ҳϺͶ�����֯�����أ����ճ���ѧϰ�������У���Ŭ�������ŵ���ּ�;��������ŵļ��ɣ�����������Ա������
+              在思想上，我一直保持着对党的忠诚和对团组织的尊重；在日常的学习和生活中，我努力践行团的宗旨和精神，遵守团的纪律，认真履行团员的义务。
             </div>
             <div>
-              �ڹ����ϣ���һֱ�����渺���̬��Ͷ�����У�ȫ���Ը���Ȼ������Ҳ��ʶ���Լ��������಻�㣬�ر������˼ʽ���������ʱ���Ե��������ɬ��ȱ�����ţ���������Ѻ���սʱ����ʱ����ڼ��꣬ȱ���㹻�����ĺ��侲���ڹ�ȥ������֯����͹����У��Ҽ������ջ�ͳɳ���Ҳ��ʶ���������Ĳ���֮�����ڽ���ѧϰ�����У��ҽ�����Ŭ���������Լ������ƣ��ֲ�����֮����ϣ��ͨ������֯�����������ʵ���Ķ������������Լ�������������
+              在工作上，我一直以认真负责的态度投入其中，全力以赴。然而，我也意识到自己存在许多不足，特别是在人际交往方面有时会显得内向和羞涩，缺乏自信；在面对困难和挑战时，有时会过于急躁，缺乏足够的耐心和冷静。在过去的团组织生活和工作中，我既有所收获和成长，也认识到了自身的不足之处。在今后的学习生活中，我将继续努力，发挥自己的优势，弥补不足之处，希望通过团组织的培养和社会实践的锻炼不断提升自己，完善自身。
             </div>
           </div>
           <div style="height: auto" class="white shadow mgt8">
