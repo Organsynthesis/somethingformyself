@@ -20,6 +20,17 @@
       setInterval(myDate, 1000);
     </script>
 
+    <script>
+      function like() {
+        let likenumbersid = window.document.getElementById("lnsd");
+        // 把文字转化为数字
+        let likenumbers = parseInt(likenumbersid.innerText);
+        let newnumber = likenumbers + 1;
+        likenumbersid.innerText = newnumber;
+        return;
+      }
+    </script>
+
     <style>
       body {
         margin: 0;
@@ -99,6 +110,10 @@
         <div class="daohang" style="color: rgb(239, 25, 114)">QQ：secret</div>
         <div style="font-size: 10px">网页布局仿制b站up主</div>
         <a href="https://space.bilibili.com/34786453">up主首页</a>
+      </div>
+      <div>
+        简陋点赞器->
+        <button id="lnsd" onclick="like()">0</button>
       </div>
     </div>
     <!-- 右 -->
