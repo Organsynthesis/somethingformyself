@@ -78,9 +78,6 @@
         border-radius: 10px; /* 圆角的大小可以自己调 */
         font-size: 14px;
       }
-      .roundside {
-        border-radius: 10px; /* 圆角的大小可以自己调 */
-      }
 
       .preview-text {
         position: absolute;
@@ -88,11 +85,14 @@
         overflow: hidden;
         transition: max-height 0.3s ease;
         opacity: 0;
+        border-radius: 10px; /* 圆角的大小可以自己调 */
       }
 
       .hover-expand:hover .preview-text {
         max-height: 400px; /* 根据需要调整高度 */
         opacity: 1;
+        background-color: azure;
+        padding: 10px;
       }
     </style>
   </head>
