@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DREBBER的个人主页</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <script>
       var i = 0;
       function myDate() {
@@ -15,7 +19,16 @@
         var minutes = now.getMinutes();
 
         document.getElementById("div").innerHTML =
-          year + "年" + month + "月" + day + "日" + hours + "时";
+          year +
+          "年" +
+          month +
+          "月" +
+          day +
+          "日 " +
+          hours +
+          "时" +
+          (minutes < 10 ? "0" + minutes : minutes) +
+          "分";
       }
       setInterval(myDate, 1000);
     </script>
@@ -23,109 +36,257 @@
     <script>
       function like() {
         let likenumbersid = window.document.getElementById("lnsd");
-        // 把文字转化为数字
         let likenumbers = parseInt(likenumbersid.innerText);
         let newnumber = likenumbers + 1;
         likenumbersid.innerText = newnumber;
+
+        // 添加点赞动画效果
+        likenumbersid.style.transform = "scale(1.2)";
+        likenumbersid.style.transition = "transform 0.3s ease";
+        setTimeout(() => {
+          likenumbersid.style.transform = "scale(1)";
+        }, 300);
         return;
       }
     </script>
 
     <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Noto Sans SC", sans-serif;
+      }
+
       body {
         margin: 0;
         height: 100vh;
-        background-image: url("./sor/desktop6666.jpg");
+        background-image: url("./sor/desktop6666.png");
         background-repeat: no-repeat;
-        background-position: right top;
-        background-size: 100% 100%;
-        /* background-color: darkgray; */
+        background-position: center;
+        background-size: cover;
+        color: #333;
       }
-      /** {
-        border: 1px solid black;
-      }*/
+
       .flex {
         display: flex;
       }
+
       .white {
-        background-color: rgb(221, 202, 202, 0.7);
+        background-color: rgba(255, 255, 255, 0.511); /* 70%不透明 */
+        backdrop-filter: blur(5px);
       }
+
       .flex1 {
         flex: 1;
       }
+
       .column {
         flex-direction: column;
       }
+
       .row {
         flex-direction: row;
       }
+
       .shadow {
-        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
-          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }
+
       .mg8 {
         margin: 8px;
       }
+
       .mgr8 {
         margin-right: 8px;
       }
+
       .mgt8 {
         margin-top: 8px;
       }
+
       .daohang {
-        padding: 10px 20px;
-        border-bottom: 1px solid #999;
-        border-radius: 10px; /* 圆角的大小可以自己调 */
+        padding: 12px 20px;
+        border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+        border-radius: 8px;
         font-size: 14px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        margin: 4px 0;
+      }
+
+      .daohang:hover {
+        transform: translateX(4px);
+        background-color: rgba(255, 255, 255, 0.95);
       }
 
       .preview-text {
         position: absolute;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
         opacity: 0;
-        border-radius: 10px; /* 圆角的大小可以自己调 */
+        border-radius: 8px;
+        z-index: 10;
+        background-color: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        width: 200px;
       }
 
       .hover-expand:hover .preview-text {
-        max-height: 400px; /* 根据需要调整高度 */
+        max-height: 400px;
         opacity: 1;
-        background-color: azure;
-        padding: 10px;
+        background-color: white;
+        padding: 12px;
+      }
+
+      /* 新增样式 */
+      #lnsd {
+        background-color: #ff4757;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 4px 12px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      #lnsd:hover {
+        background-color: #ff6b81;
+      }
+
+      .roundside {
+        border-radius: 12px;
+        transition: all 0.3s ease;
+      }
+
+      .roundside:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      .header-date {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 20px;
+        font-size: 14px;
+      }
+
+      .avatar-container {
+        padding: 12px;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+      }
+
+      .avatar-name {
+        margin: 5px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #333;
+      }
+
+      .footer {
+        padding: 8px;
+        font-size: 10px;
+        color: #666;
+        border-top: 1px solid rgba(153, 153, 153, 0.3);
+      }
+
+      .footer a {
+        color: #3498db;
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      .content-box {
+        padding: 16px;
+        line-height: 1.6;
+        border-radius: 12px;
+      }
+
+      .media-item {
+        align-items: center;
+        padding: 12px;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+      }
+
+      .media-item:hover {
+        background-color: rgba(255, 255, 255, 0.95);
+      }
+
+      .media-title {
+        margin: 5px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #333;
+      }
+
+      .date-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 12px;
+        text-align: center;
+      }
+
+      .date-card-date {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 8px;
+      }
+
+      .date-card-text {
+        font-size: 34px;
+        font-family: "楷体", cursive;
+        color: #333;
+      }
+
+      .date-card b {
+        color: #ff4757;
       }
     </style>
   </head>
   <body class="flex">
     <!-- 左 -->
-    <div style="width: 150px; z-index: 2" class="white shadow flex column">
+    <div style="width: 180px; z-index: 2" class="white shadow flex column">
       <!-- 头像 -->
-      <div
-        class="flex"
-        style="
-          padding: 10px;
-          align-items: center;
-          justify-content: center;
-          border-bottom: 1px solid #999;
-        "
-      >
-        <img src=".\sor\712.jpg" alt="我的头像" width="50px" />
-        <div style="margin: 5px">DREBBER</div>
+      <div class="flex avatar-container">
+        <img
+          src=".\sor\712.jpg"
+          alt="我的头像"
+          width="50px"
+          style="border-radius: 50%"
+        />
+        <div class="avatar-name">DREBBER</div>
       </div>
       <!-- 导航 -->
       <div class="flex1">
         <div
           id="_guide"
           class="daohang hover-expand"
-          style="color: rgb(218, 76, 105); height: auto"
+          style="color: #ff4757; height: auto"
         >
           <div class="preview-text flex column">
             <div>
-              <a href="https://space.bilibili.com/1826661409"
-                ><img src=".\sor\bilimyself.webp" alt="我自己哒" height="60px"
-              /></a>
+              <a href="https://space.bilibili.com/1826661409">
+                <img
+                  src=".\sor\bilimyself.webp"
+                  alt="我自己哒"
+                  height="60px"
+                  style="border-radius: 8px"
+                />
+              </a>
             </div>
-            <div>Cestbon_Aurora</div>
+            <div style="margin-top: 8px; text-align: center">
+              Cestbon_Aurora
+            </div>
           </div>
           BiliBili：available
         </div>
@@ -133,7 +294,7 @@
         <div
           id="_guide"
           class="daohang hover-expand"
-          style="color: rgb(11, 169, 22); height: auto"
+          style="color: #2ecc71; height: auto"
         >
           WeChat：secret
         </div>
@@ -141,120 +302,138 @@
         <div
           id="_guide"
           class="daohang hover-expand"
-          style="color: rgb(239, 25, 114); height: auto"
+          style="color: #e84393; height: auto"
         >
           QQ：secret
         </div>
-        <div>
-          简陋点赞器->
+        <div style="padding: 12px; font-size: 13px">
+          简陋点赞器 →
           <button id="lnsd" onclick="like()">0</button>
         </div>
       </div>
 
-      <div>
-        <div style="font-size: 9px">可能会有意想不到的地方可以点击噢</div>
-        <div style="font-size: 9px">网页布局仿制b站up主</div>
+      <div class="footer">
+        <div style="margin-bottom: 4px">可能会有意想不到的地方可以点击噢</div>
+        <div style="margin-bottom: 8px">网页布局仿制b站up主</div>
         <a href="https://space.bilibili.com/34786453">up主首页</a>
       </div>
     </div>
     <!-- 右 -->
-    <div class="flex1 flex column">
+    <div class="flex1 flex column" style="overflow: hidden">
       <!-- 上 -->
-      <div style="height: auto; z-index: 1" class="white shadow row">
-        <div id="div"></div>
-        <div>这里是某个人自己随便打出来的网页</div>
-        <div>你可以发现这个家伙甚至不会右对齐</div>
+      <div
+        style="height: auto; z-index: 1"
+        class="white shadow row header-date"
+      >
+        <div id="div" style="font-weight: 500"></div>
+        <div style="color: #666; font-size: 14px">
+          这里是某个人自己随便打出来的网页
+        </div>
       </div>
       <!-- 下 -->
-      <div class="flex1 flex" style="overflow: auto">
+      <div class="flex1 flex" style="overflow: auto; padding: 8px">
         <!-- 下左 -->
         <div style="flex: 5" class="column mg8">
-          <div style="height: 100px" class="flex row">
-            <div
-              style="flex: 1; padding: 5px"
-              class="mgr8 white shadow roundside"
-            >
-              <div>2005.7.14</div>
-              <div style="font-size: 34px; font-family: 楷体">我来</div>
+          <div style="height: 120px" class="flex row">
+            <div class="flex1 mgr8 white shadow roundside date-card">
+              <div class="date-card-date">2005.7.14</div>
+              <div class="date-card-text">我来</div>
             </div>
-            <div
-              style="flex: 1; padding: 5px"
-              class="mgr8 white shadow roundside"
-            >
-              <div>2019.7.14</div>
-              <div style="font-size: 34px; font-family: 楷体">我现</div>
+            <div class="flex1 mgr8 white shadow roundside date-card">
+              <div class="date-card-date">2019.7.14</div>
+              <div class="date-card-text">我现</div>
             </div>
-            <div
-              style="flex: 1; padding: 5px"
-              class="mgr8 white shadow roundside"
-            >
-              <div>2021.7.14</div>
-              <div style="font-size: 34px; font-family: 楷体">我见</div>
+            <div class="flex1 mgr8 white shadow roundside date-card">
+              <div class="date-card-date">2021.7.14</div>
+              <div class="date-card-text">我见</div>
             </div>
-            <div style="flex: 1; padding: 5px" class="white shadow roundside">
-              <div>2024.7.14</div>
-              <div style="font-size: 34px; font-family: 楷体">我将</div>
-              <div style="font-size: 34px; font-family: 楷体"><b>征服</b></div>
+            <div class="flex1 white shadow roundside date-card">
+              <div class="date-card-date">2024.7.14</div>
+              <div class="date-card-text">我将</div>
+              <div class="date-card-text"><b>征服</b></div>
             </div>
           </div>
-          <div style="height: auto" class="white shadow mgt8 flex">
+          <div
+            class="white shadow media-item"
+            style="display: flex; align-items: center; margin-bottom: 16px"
+          >
             <a
               href="https://www.bilibili.com/video/BV1Rm4y1j7Bc/?spm_id_from=333.788.recommend_more_video.0&vd_source=74d5186621dd68e2d5f04e4ea471b06c"
             >
-              <img src=".\sor\bivideo.jpg" alt="b站视频" height="100px"
-            /></a>
-            <div style="margin: 5px; font-size: 30px">最喜欢的鬼畜</div>
+              <img
+                src=".\sor\bivideo.jpg"
+                alt="b站视频"
+                height="100px"
+                style="border-radius: 8px"
+              />
+            </a>
+            <div class="media-title" style="margin-left: 12px">
+              最喜欢的鬼畜
+            </div>
           </div>
-          <div style="height: auto" class="white shadow mgt8 flex">
+
+          <div
+            class="white shadow media-item"
+            style="display: flex; align-items: center; margin-bottom: 16px"
+          >
             <a
               href="https://www.bilibili.com/bangumi/play/ss47388?spm_id_from=333.337.0.0"
             >
-              <img src=".\sor\takagi.jpg" alt="b站视频" height="100px"
-            /></a>
-            <div style="margin: 5px; font-size: 30px">最喜欢的动漫</div>
+              <img
+                src=".\sor\takagi.jpg"
+                alt="b站视频"
+                height="100px"
+                style="border-radius: 8px"
+              />
+            </a>
+            <div class="media-title" style="margin-left: 12px">
+              最喜欢的动漫
+            </div>
           </div>
-          <div style="height: auto" class="white shadow mgt8 flex">
+
+          <div
+            class="white shadow media-item"
+            style="display: flex; align-items: center"
+          >
             <a href="https://www.bilibili.com/video/BV1me411n7eu/">
-              <img src=".\sor\OP.jpg" alt="b站视频" height="120px"
-            /></a>
-            <div style="margin: 5px; font-size: 30px">最喜欢的歌曲</div>
-          </div>
-          <div style="height: auto" class="white shadow mgt8 flex">
-            <img src=".\sor\CP.jpg" alt="b站视频" height="120px" />
-            <div class="flex column">
-              <div style="margin: 5px; font-size: 30px">目前推的CP</div>
-              <div style="margin: 5px; font-size: 10px">
-                这里还有点私货嘿嘿
-                <a href=".\sor\星萤.zip">巴拉巴拉哄</a>
-              </div>
+              <img
+                src=".\sor\OP.jpg"
+                alt="b站视频"
+                height="120px"
+                style="border-radius: 8px"
+              />
+            </a>
+            <div class="media-title" style="margin-left: 12px">
+              最喜欢的歌曲
             </div>
           </div>
         </div>
         <!-- 下右 -->
         <div style="flex: 4" class="column mgr8 mgt8">
-          <div style="height: auto" class="white shadow">
-            <div>
+          <div class="white shadow content-box">
+            <p>
               作为一名团员，我既代表着自己，也肩负着一份责任和对社会作出贡献的义务。
-            </div>
-            <div>
+            </p>
+            <p>
               在进入大学的这段时间里，我深刻认识到了自身的优点和不足，并希望能够借此机会更好地发挥自己的优势，弥补自身的不足。
-            </div>
-            <div>
+            </p>
+            <p>
               在思想上，我一直保持着对党的忠诚和对团组织的尊重；在日常的学习和生活中，我努力践行团的宗旨和精神，遵守团的纪律，认真履行团员的义务。
-            </div>
-            <div>
+            </p>
+            <p>
               在工作上，我一直以认真负责的态度投入其中，全力以赴。然而，我也意识到自己存在许多不足，特别是在人际交往方面有时会显得内向和羞涩，缺乏自信；在面对困难和挑战时，有时会过于急躁，缺乏足够的耐心和冷静。在过去的团组织生活和工作中，我既有所收获和成长，也认识到了自身的不足之处。在今后的学习生活中，我将继续努力，发挥自己的优势，弥补不足之处，希望通过团组织的培养和社会实践的锻炼不断提升自己，完善自身。
-            </div>
-          </div>
-          <div style="height: auto" class="white shadow mgt8">
+            </p>
           </div>
         </div>
       </div>
     </div>
     <!-- 以下代码请放入前端html文件的body内 -->
-<script src="https://agi-dev-platform-web.bj.bcebos.com/ai_apaas/embed/output/embedLiteSDK.js?responseExpires=0"></script>
-<script>
-    new EmbedLiteSDK({appId: 'f3c37f0d-6a1b-47bf-999c-78d93f170eb6', code: 'embedpTxWwnMzXCwmQMbtCGei'});
-</script>
+    <script src="https://agi-dev-platform-web.bj.bcebos.com/ai_apaas/embed/output/embedLiteSDK.js?responseExpires=0"></script>
+    <script>
+      new EmbedLiteSDK({
+        appId: "f3c37f0d-6a1b-47bf-999c-78d93f170eb6",
+        code: "embedpTxWwnMzXCwmQMbtCGei",
+      });
+    </script>
   </body>
 </html>
